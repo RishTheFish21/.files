@@ -1,0 +1,42 @@
+
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]
+success_symbol = "[➜](bold green)" 
+
+# Use custom format
+format = """
+[───────](#D7E8BA)
+[│](#D7E8BA)$directory$rust$package
+[╰─>](#D7E8BA) """
+# Wait 10 milliseconds for starship to check files under the current directory.
+
+[battery]
+full_symbol = "╭── 🔋 "
+charging_symbol = "╭── ⚡️"
+discharging_symbol = "╭── 💻 "
+
+[[battery.display]]  # "bold red" style when capacity is between 0% and 10%
+threshold = 10
+style = "#D7E8BA"
+
+[[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
+threshold = 30
+style = "#D7E8BA"
+
+[[battery.display]]  # "bold green" style when capacity is between 10% and 30%
+threshold = 100
+style = "#D7E8BA"
+
+[username]
+format = "[$user](bold blue)[ ](red)"
+disabled = false
+show_always = true
+
+[memory_usage]
+format = "$symbol[${ram_pct}]($style) "
+disabled = false
+threshold = -1
+symbol = "RAM "
+style = "bold dimmed green"
+
