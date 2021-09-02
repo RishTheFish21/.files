@@ -1,4 +1,5 @@
-These are my personal collection of configuration files for my desktop.
+# My Dotfiles
+These is my collection of configuration files for my desktop.
 
 Softwares Used:
 * WM: Yabai
