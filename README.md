@@ -1,5 +1,6 @@
 # My Dotfiles
 These is my collection of configuration files for my desktop.
+Please note: My yabai configuration is stored inside my .zshrc file
 
 Softwares Used:
 * WM: Yabai
